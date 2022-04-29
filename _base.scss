@@ -2,7 +2,7 @@
 
 @font-face {
   src: url('fonts/Gilroy-Bold.woff');
-  font-family: 'TTNorms';
+  font-family: 'Gilroy';
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   src: url('fonts/Gilroy-Medium.woff');
-  font-family: 'TTNorms';
+  font-family: 'Gilroy';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   src: url('fonts/Gilroy-Regular.woff');
-  font-family: 'TTNorms';
+  font-family: 'Gilroy';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,6 +37,19 @@ a {
   text-decoration: none;
 }
 
+ul li {
+  list-style: none;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -44,8 +57,10 @@ a {
   padding: 0 15px;
 }
 
-ul li {
-  list-style: none;
+@mixin main__button() {
+  background: #f57059;
+  border-radius: 10px;
+  padding: 17px 35px;
 }
 
 // @mixin border__white() {
@@ -73,9 +88,3 @@ ul li {
 //   flex-direction: column;
 // }
 
-// @mixin button__link() {
-//   background: #24A3FF;
-//   box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
-//   border-radius: 12px;
-//   padding: 16px 70px;
-// }

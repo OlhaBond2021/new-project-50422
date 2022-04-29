@@ -3,70 +3,94 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-    <title>Document</title>
+    <title>new-project-50422</title>
 
 </head>
 
 <body>
-    <section class="first__block">
+    <header class="header">
         <div class="container">
-            <header class="header">
-                <div class="wrapper">
-                    <div class="header__logotype">
-                        <span>AR Shakir</span>
+            <picture class="figure">
+                <source srcset="images/first__block/first__block__bg.png" media="screen and (max-width: 1200px)">
+                <img src="images/first__block/first__block__bg.png" alt="figure">
+            </picture>
+            <nav class="nav">
+                <span class="nav__logo">AR Shakir</span>
+                <div class="nav__list">
+                    <div class="dropdown">
+                        <button class="nav__item nav__after dropbtn">Product</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
                     </div>
-                    <nav class="header__nav">
-                        <div class="header__navigation">
-                            <a href="#" class="header__link">Product</a>
-                            <a href="#" class="header__link">Template</a>
-                            <a href="#" class="header__link">Blog</a>
-                            <a href="#" class="header__link">Pricing</a>
+                    <div class="dropdown">
+                        <button class="nav__item nav__after dropbtn">Template</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
                         </div>
-                        <div class="header__sign__and__button">
-                            <a href="#" class="sign__link">Sign In</a>
-                            <a href="#" class="button__link">Start Free</a>
-                        </div>
-                    </nav>
+                    </div>
+                    <a href="#" class="nav__item">Blog</a>
+                    <a href="#" class="nav__item">Pricing</a>
                 </div>
-            </header>
-            <div class="first__block__wrapper__content">
-                <div class="left__content">
+                <ul class="nav__button">
+                    <li>
+                        <a href="#" class="button__sign">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="#" class="button__link">Start Free</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- <section class="first__block">
+        <div class="container">
+            <div class="first__content">
+                <div class="content__left">
                     <p class="text">Product Growth Solution in Single Platform.</p>
                     <h1 class="title">Managing business payments has never been easier</h1>
                     <p class="gray__text">Never at water me might. On formed merits hunted unable merely by mr whence
                         or. Possession the unpleasing simplicity her
                         uncommonly.</p>
-                    <form action="" class="form">
+                    <form action="#" method="get" class="left__form">
                         <label for="">Register using email address</label>
-                        <input type="email" placeholder="shakir260@gmail.com">
-                        <button>Submit</button>
+                        <input type="email" name="userEmail" value="" placeholder="shakir260@gmail.com">
+                        <button class="" type="button">Submit</button>
                     </form>
-                    <div class="link__box">
-                        <a href="#">Free Register</a>
-                        <a href="#">Great Service</a>
-                    </div>
+                    <ul class="link__box">
+                        <li>
+                            <a class="link" href="#">Free Register</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#">Great Service</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="right__content">
-                    <div class="right__content__followers__likes">
-                        <div class="followers">
+                <div class="content__right">
+                    <div class="right__followers-likes">
+                        <div class="right__followers">
                             <p class="followers__undertitle">Followers</p>
-                            <div class="followers">
-                                <p class="followers__text">9,350</p>
-                                <p class="followers__text">8.46%</p>
-                            </div>
+                            <ul class="followers__list">
+                                <li class="followers__text">9,350</li>
+                                <li class="followers__text">8.46%</li>
+                            </ul>
                             <div class="followers__stripe"></div>
                         </div>
-                        <div class="likes">
+                        <div class="right__likes">
                             <p class="likes__undertitle">Likes</p>
-                            <div class="likes">
-                                <p class="likes__text">9,350</p>
-                                <p class="likes__text">8.46%</p>
-                            </div>
+                            <ul class="likes__list">
+                                <li class="likes__text">9,350</li>
+                                <li class="likes__text">8.46%</li>
+                            </ul>
                             <div class="likes__stripe"></div>
                         </div>
                         <object data="images/first__block/first__block__total__balance.svg" type="image/svg+xml">
@@ -74,12 +98,12 @@
                         <object data="images/first__block/first__block__dots.svg" type="image/svg+xml">
                         </object>
                     </div>
-                    <div class="right__content__products">
+                    <div class="right__content-products">
                         <div class="recent__product">
                             <p class="products__text">Recent Product</p>
-                            <a href="#" class="products__link">Live Preview</a>
+                            <a href="#" class="products__button">Live Preview</a>
                         </div>
-                        <div class="products__wrapper__diagram">
+                        <div class="products__diagram">
                             <object data="images/first__block/first__block__diagram.svg" type="image/svg+xml">
                             </object>
                         </div>
@@ -100,27 +124,27 @@
                             <p class="numbers__3string">From last 7 days</p>
                         </div>
                     </div>
-                    <div class="right__content__position__boxes">
+                    <div class="right__content-position">
                         <div class="position__date">
-                            <div class="position__date__wrapper">
-                                <p class="date__text">March 24, 02:00PM</p>
-                                <p class="date__text">122,637</p>
-                                <p class="date__text">21.4%</p>
-                            </div>
+                            <ul class="position__wrapper">
+                                <li class="date__text">March 24, 02:00PM</li>
+                                <li class="date__text">122,637</li>
+                                <li class="date__text">21.4%</li>
+                            </ul>
                         </div>
                         <object data="images/first__block/first__block__crosses.svg" type="image/svg+xml"></object>
                         <div class="position__circle">
                             <div class="circle"></div>
-                            <div class="content__right__circle">
-                                <p class="circle__number">+ $28,900</p>
-                                <p class="circle__text">Received from Michael V</p>
-                            </div>
+                            <ul class="content__right-circle">
+                                <li class="circle__number">+ $28,900</li>
+                                <li class="circle__text">Received from Michael V</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- <section class="second__block">
         <div class="container__second">
             <h5>Over 32k+ software businesses growing with AR Shakir</h5>
@@ -553,7 +577,7 @@
         </div>
     </footer> -->
 
-    <script type="text/javascript" src="jquery.js"></script>
+    <!-- <script type="text/javascript" src="jquery.js"></script>
     <script src="./slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -590,7 +614,7 @@
                 ]
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
